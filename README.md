@@ -52,53 +52,6 @@ void setup() {
  
  INICIANDO(); //testa o funcionamento dos leds
 
-
-void LED(){
-  //Configuração do led occipital
-if(digitalRead(bot_occipital) == LOW){
-  delay(500);
-  myDFPlayer.play(2); // Reproduz o arquivo número 2
-  digitalWrite(led_occipital,HIGH);//LED ligado
-  delay(17000);
-  digitalWrite(led_occipital, LOW);//LED desligado
-  }
-
-  //Configuração do led parietal
-  if(digitalRead(bot_pariental) == LOW){
-  delay(500);
-  myDFPlayer.play(5); // Reproduz o arquivo número 5
-  digitalWrite(led_pariental,HIGH);//LED ligado
-  delay(22000);
-  digitalWrite(led_pariental,LOW);//LED desligado
-  }
-
-  //Configuração do led frontal
-  if(digitalRead(bot_frontal) == LOW){
-  delay(500);
-  myDFPlayer.play(4); // Reproduz o arquivo número 4
-  digitalWrite(led_frontal,HIGH);//LED ligado
-  delay(15000);
-  digitalWrite(led_frontal, LOW);//LED desligado
-  }
-
-  //Configuração do led temporal
-  if(digitalRead(bot_temporal) == LOW){
-  delay(500);
-  myDFPlayer.play(1); // Reproduz o arquivo número 1
-  digitalWrite(led_temporal,HIGH);//LED ligado
-  delay(20000);
-  digitalWrite(led_temporal, LOW);//LED desligado
-  }
-
-  //Configuração do led cerebelo
-  if(digitalRead(bot_cerebelo) == LOW){
-  delay(500); //Reproduz o arquivo número 3
-  myDFPlayer.play(3);
-  digitalWrite(led_cerebelo,HIGH);//LED ligado
-  delay(17000);
-  digitalWrite(led_cerebelo, LOW);//LED desligado
-  }
-
 }
 
 void INICIANDO(){
@@ -162,7 +115,57 @@ digitalWrite(led_cerebelo, LOW);
 
 }
 
- 
+
+
+void LED(){
+  //Configuração do led occipital
+if(digitalRead(bot_occipital) == LOW){
+  delay(500);
+  myDFPlayer.play(2); // Reproduz o arquivo número 2
+  digitalWrite(led_occipital,HIGH);//LED ligado
+  delay(17000);
+  digitalWrite(led_occipital, LOW);//LED desligado
+  }
+
+  //Configuração do led parietal
+  if(digitalRead(bot_pariental) == LOW){
+  delay(500);
+  myDFPlayer.play(5); // Reproduz o arquivo número 5
+  digitalWrite(led_pariental,HIGH);//LED ligado
+  delay(22000);
+  digitalWrite(led_pariental,LOW);//LED desligado
+  }
+
+  //Configuração do led frontal
+  if(digitalRead(bot_frontal) == LOW){
+  delay(500);
+  myDFPlayer.play(4); // Reproduz o arquivo número 4
+  digitalWrite(led_frontal,HIGH);//LED ligado
+  delay(15000);
+  digitalWrite(led_frontal, LOW);//LED desligado
+  }
+
+  //Configuração do led temporal
+  if(digitalRead(bot_temporal) == LOW){
+  delay(500);
+  myDFPlayer.play(1); // Reproduz o arquivo número 1
+  digitalWrite(led_temporal,HIGH);//LED ligado
+  delay(20000);
+  digitalWrite(led_temporal, LOW);//LED desligado
+  }
+
+  //Configuração do led cerebelo
+  if(digitalRead(bot_cerebelo) == LOW){
+  delay(500); //Reproduz o arquivo número 3
+  myDFPlayer.play(3);
+  digitalWrite(led_cerebelo,HIGH);//LED ligado
+  delay(17000);
+  digitalWrite(led_cerebelo, LOW);//LED desligado
+  }
+
+}
+
+
 void audio(){
 
    if (digitalRead(bot_occipital) == LOW) { // Verifica se o botão occipital foi pressionado
@@ -199,10 +202,10 @@ void audio(){
     myDFPlayer.play(3); // Reproduz o arquivo número 3
   }
 
+
 }
 
 
-}
 
 void loop() {
 
