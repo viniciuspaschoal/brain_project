@@ -16,11 +16,11 @@ const int bot_temporal = 3;
 const int bot_cerebelo = 2;
 
 //Declaração nome dos leds
-#define led_occipital 44 //
-#define led_pariental 40 //
-#define led_frontal 38   //
-#define led_temporal 36 //
-#define led_cerebelo 42 //
+#define led_occipital 44 // vermelho
+#define led_pariental 40 // azul
+#define led_frontal 38   // laranja
+#define led_temporal 36 // verde
+#define led_cerebelo 42 // branco
 
 void setup() {
   mySerial.begin(9600); //Declara comunicação serial
